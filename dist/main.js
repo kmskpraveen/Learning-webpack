@@ -81,20 +81,20 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/engine.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./src/engine.js":
+/*!***********************!*\
+  !*** ./src/engine.js ***!
+  \***********************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _text__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./text */ \"./src/text.js\");\n// Acts as entrypoint for webpack\r\n\r\n\r\nObject(_text__WEBPACK_IMPORTED_MODULE_0__[\"writeToScreen\"])()\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _text__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./text */ \"./src/text.js\");\n// Acts as entrypoint for webpack\r\n\r\n\r\nObject(_text__WEBPACK_IMPORTED_MODULE_0__[\"writeToScreen\"])()\n\n//# sourceURL=webpack:///./src/engine.js?");
 
 /***/ }),
 
