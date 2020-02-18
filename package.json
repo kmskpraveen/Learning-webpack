@@ -1,0 +1,23 @@
+{
+  "name": "learning-webpack",
+  "version": "1.0.0",
+  "description": "learning-webpack",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmskpraveen/Learning-webpack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kmskpraveen/Learning-webpack/issues"
+  },
+  "homepage": "https://github.com/kmskpraveen/Learning-webpack#readme",
+  "devDependencies": {
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  }
+}
