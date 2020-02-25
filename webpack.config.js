@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
     // this is actually the configuration webpack uses
     
@@ -9,10 +11,16 @@ module.exports = {
     // This is the default path for the entry point
     // entry: './src/index.js'
     entry: './src/engine.js',
-    // Note: ypu can also specify multiple entry points like an object (or key-value pair)
+    // Note: you can also specify multiple entry points like an object (or key-value pair)
 
     // Specifies the name of .js file that resilted from $ npm run build and its location
     output: {
-        filename: '../build/build.js'
+        // Disadvantage: creates file structure dependency for the project
+        // (if you move to other folder it breaks)
+        // path: 'Use/absolute/path'
+        // Came from $ npm install path --save
+        path: path.resolve(__dirname,'build'),
+        filename: 'build.js'
+        // filename: '../build/build.js'
     } 
 }
