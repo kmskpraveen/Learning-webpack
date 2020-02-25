@@ -1,5 +1,15 @@
 const path = require('path')
 
+// Placeholders in webpack
+/**
+ * [hash]
+ * [chunkhash]
+ * [name]
+ * [id]
+ * [query]
+ * [contenthash]
+ */
+
 module.exports = {
     // this is actually the configuration webpack uses
     
@@ -10,9 +20,11 @@ module.exports = {
 
     // This is the default path for the entry point
     // entry: './src/index.js'
-    entry: './src/engine.js',
+    // entry: './src/engine.js',
     // Note: you can also specify multiple entry points like an object (or key-value pair)
-
+    entry: {
+        myfile: './src/engine.js'
+    },
     // Specifies the name of .js file that resilted from $ npm run build and its location
     output: {
         // Disadvantage: creates file structure dependency for the project
@@ -20,7 +32,9 @@ module.exports = {
         // path: 'Use/absolute/path'
         // Came from $ npm install path --save
         path: path.resolve(__dirname,'build'),
-        filename: 'build.js'
+        // filename: 'build.js'
         // filename: '../build/build.js'
+        filename: 'js/[name].js'
+        // filename: 'js/[name].[contenthash].js'
     } 
 }
