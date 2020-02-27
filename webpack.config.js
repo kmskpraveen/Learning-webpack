@@ -34,7 +34,7 @@ module.exports = {
         path: path.resolve(__dirname,'build'),
         // filename: 'build.js'
         // filename: '../build/build.js'
-        filename: 'js/[name].js',
+        filename: 'js/main.js',
         // filename: 'js/[name].[contenthash].js'
 
         // Ex: js/1.js (node_module); js/2.js (you wrote); js/3.js (node_moduel)
@@ -52,5 +52,10 @@ module.exports = {
         // In order to supprt everything use umd - universal module syntax
         libraryTarget: 'umd',
         library: 'myfirstlibrary'
-    } 
+    },
+    //  This property is used by webpack-dev-server
+    devServer: {
+        port: 1234,
+        contentBase: path.join(__dirname,'dist')
+    }
 }

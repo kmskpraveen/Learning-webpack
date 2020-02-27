@@ -4,6 +4,7 @@
   "description": "learning-webpack",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack-dev-server",
     "build": "webpack"
   },
   "repository": {
@@ -18,7 +19,8 @@
   "homepage": "https://github.com/kmskpraveen/Learning-webpack#readme",
   "devDependencies": {
     "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
     "path": "^0.12.7"
