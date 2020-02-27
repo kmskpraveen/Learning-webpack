@@ -1,4 +1,14 @@
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory(); // commonjs/commonjs2
+	else if(typeof define === 'function' && define.amd)
+		define([], factory); // the amd syntax
+	else if(typeof exports === 'object')
+		exports["myfirstlibrary"] = factory(); // commonjs/commonjs2
+	else
+		root["myfirstlibrary"] = factory(); // var syntax
+})(window, function() {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -77,7 +87,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/assets/";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
@@ -94,7 +104,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _text__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./text */ \"./src/text.js\");\n// Acts as entrypoint for webpack\r\n\r\n\r\nObject(_text__WEBPACK_IMPORTED_MODULE_0__[\"writeToScreen\"])()\n\n//# sourceURL=webpack:///./src/engine.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _text__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./text */ \"./src/text.js\");\n// Acts as entrypoint for webpack\r\n\r\n\r\nObject(_text__WEBPACK_IMPORTED_MODULE_0__[\"writeToScreen\"])()\n\n//# sourceURL=webpack://myfirstlibrary/./src/engine.js?");
 
 /***/ }),
 
@@ -106,8 +116,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tex
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"writeToScreen\", function() { return writeToScreen; });\nfunction writeToScreen() {\r\n    document.write('Hello world from webpack!')\r\n}\n\n//# sourceURL=webpack:///./src/text.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"writeToScreen\", function() { return writeToScreen; });\nfunction writeToScreen() {\r\n    document.write('Hello world from webpack!')\r\n}\n\n//# sourceURL=webpack://myfirstlibrary/./src/text.js?");
 
 /***/ })
 
 /******/ });
+});

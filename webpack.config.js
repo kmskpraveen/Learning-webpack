@@ -39,6 +39,18 @@ module.exports = {
 
         // Ex: js/1.js (node_module); js/2.js (you wrote); js/3.js (node_moduel)
         // https:server.com/assets/js/1.js
-        publicPath: '/assets/'
+        publicPath: '/assets/',
+
+        // We can specify what kind of code we want webpack to create..
+        // This uses var = .. syntax
+        // libraryTarget: 'var',
+        // This uses define() syntax
+        // libraryTarget: 'amd',
+        // This uses exports[] synatx
+        // libraryTarget: 'commonjs',
+        // By default it uses var syntax..
+        // In order to supprt everything use umd - universal module syntax
+        libraryTarget: 'umd',
+        library: 'myfirstlibrary'
     } 
 }
