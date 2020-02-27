@@ -1,4 +1,6 @@
 // Acts as entrypoint for webpack
-import { writeToScreen } from './text'
+import { changeH1 } from './text'
 
-writeToScreen()
+changeH1('Wow!!!')
+
+if(module && module.hot) module.hot.accept()

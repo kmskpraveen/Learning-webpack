@@ -1,5 +1,5 @@
 const path = require('path')
-
+const webpack = require('webpack')
 // Placeholders in webpack
 /**
  * [hash]
@@ -60,6 +60,9 @@ module.exports = {
         // Forces webpack-dev-server to write the build files to disk
         // writeToDisk: true
         // Default value
-        writeToDisk: false
-    }
+        writeToDisk: false,
+        // Hot reloading: without actually reloading, changes your webpage
+        hot: true
+    },
+    plugins: [new webpack.HotModuleReplacementPlugin()]
 }
