@@ -34,7 +34,11 @@ module.exports = {
         path: path.resolve(__dirname,'build'),
         // filename: 'build.js'
         // filename: '../build/build.js'
-        filename: 'js/[name].js'
+        filename: 'js/[name].js',
         // filename: 'js/[name].[contenthash].js'
+
+        // Ex: js/1.js (node_module); js/2.js (you wrote); js/3.js (node_moduel)
+        // https:server.com/assets/js/1.js
+        publicPath: '/assets/'
     } 
 }
