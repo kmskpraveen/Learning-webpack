@@ -56,6 +56,10 @@ module.exports = {
     //  This property is used by webpack-dev-server
     devServer: {
         port: 1234,
-        contentBase: path.join(__dirname,'dist')
+        contentBase: path.join(__dirname,'dist'),
+        // Forces webpack-dev-server to write the build files to disk
+        // writeToDisk: true
+        // Default value
+        writeToDisk: false
     }
 }
